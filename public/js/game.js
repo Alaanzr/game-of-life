@@ -38,9 +38,9 @@ Game.prototype.generateGrid = function(numRows, numCols) {
 };
 
 Game.prototype.printCells = function() {
-  for (var i = 0; i < this.grid.numCols; i++) {
+  for (var i = 0; i < this.grid.numRows; i++) {
     var rowString = '';
-    for (var j = 0; j < this.grid.numRows; j++) {
+    for (var j = 0; j < this.grid.numCols; j++) {
       var cell = this.grid.cells[i * j];
       rowString += cell.alive ? 'X|' : ' |';
     }
