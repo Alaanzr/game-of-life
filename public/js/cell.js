@@ -3,5 +3,3 @@ function Cell() {
   this.alive = Math.random() > SPAWNER;
   this.neighbours = 0;
 }
-
-var cell = new Cell();
