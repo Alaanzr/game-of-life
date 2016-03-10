@@ -21,9 +21,11 @@ Game.prototype.generateGrid = function(numRows, numCols) {
   };
 
   for (var i = 0; i < numRows; i++) {
+    var row = [];
     for (var j = 0; j < numCols; j++) {
-      grid.cells.push(new Cell());
+      row.push(new Cell());
     }
+    grid.cells.push(row);
   }
 
   return grid;
@@ -33,7 +35,7 @@ Game.prototype.printCells = function() {
   for (var i = 0; i < this.grid.numRows; i++) {
     var rowString = '';
     for (var j = 0; j < this.grid.numCols; j++) {
-      var cell = this.grid.cells[(i * this.grid.numRows) + j];
+      var cell = this.grid.cells[i][j];
       rowString += cell.alive ? 'X|' : ' |';
     }
     console.log(rowString);
