@@ -1,5 +1,7 @@
 ### Overview
-A command line tool that simulates Conway's Game of Life
+A command line tool that simulates Conway's Game of Life.
+
+Still a work-in-progress; need to extract some cell-related code into the Cell constructor but it serves as a working prototype for now.
 
 ### Example set-up
 ```
