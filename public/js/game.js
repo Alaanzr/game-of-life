@@ -83,3 +83,5 @@ Game.prototype.updateCells = function() {
     }
   }
 };
+
+module.exports = Game;

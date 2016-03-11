@@ -10,3 +10,5 @@ function Grid(numRows, numCols, Cell) {
     this.cells.push(row);
   }
 }
+
+module.exports = Grid;
